@@ -1,0 +1,24 @@
+Rule 
+S -> NP VP
+
+Rule 
+NP -> Noun
+Rule 
+NP -> Det Noun
+Rule 
+NP -> Adj Noun
+Rule 
+NP -> Det Adj Noun
+Rule 
+NP -> Noun Noun
+
+Rule 
+VP -> Verb
+Rule 
+VP -> Verb NP
+Rule 
+VP -> Verb PP
+Rule 
+VP -> Verb NP PP
+Rule 
+PP -> Prep NP

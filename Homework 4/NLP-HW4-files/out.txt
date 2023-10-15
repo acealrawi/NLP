@@ -1,0 +1,394 @@
+research fans hope for spinal injuries
+
+1:
+                S 
+        ________|_________
+       NP               VP 
+    ____|____      ______|______
+  Noun    Noun   Verb         PP 
+research  fans   hope     _____|______
+                        Prep        NP 
+                         for     ____|____
+                                Adj    Noun 
+                              spinal injuries 
+
+S:
+[ cat:   S ]
+
+1 parse found
+
+spinal injuries need research
+
+1:
+               S 
+       ________|________
+      NP              VP 
+   ____|____       ____|____
+  Adj    Noun    Verb     NP 
+spinal injuries  need      |
+                         Noun 
+                       research 
+
+S:
+[ cat:   S ]
+
+1 parse found
+
+metal fans like research
+
+1:
+            S_1 
+      _______|________
+    NP_2           VP_5+ 
+   ___|____      ____|____
+Noun_3 Noun_4+ Verb_6+ NP_7+ 
+ metal  fans   like      |
+                      Noun_8+ 
+                     research 
+
+S:
+[ cat:   S ]
+
+
+2:
+            S_9 
+      _______|________
+    NP_10          VP_5+ 
+   ___|____      ____|____
+Adj_11 Noun_4+ Verb_6+ NP_7+ 
+ metal  fans   like      |
+                      Noun_8+ 
+                     research 
+
+S:
+[ cat:   S ]
+
+2 parses found
+
+metal fans like music
+
+1:
+            S_1 
+      _______|_______
+    NP_2          VP_5+ 
+   ___|____      ___|____
+Noun_3 Noun_4+ Verb_6+ NP_7+ 
+ metal  fans   like     |
+                     Noun_8+ 
+                      music 
+
+S:
+[ cat:   S ]
+
+
+2:
+            S_9 
+      _______|_______
+    NP_10         VP_5+ 
+   ___|____      ___|____
+Adj_11 Noun_4+ Verb_6+ NP_7+ 
+ metal  fans   like     |
+                     Noun_8+ 
+                      music 
+
+S:
+[ cat:   S ]
+
+2 parses found
+
+metal fans cost money
+
+1:
+            S_1 
+      _______|_______
+    NP_2          VP_5+ 
+   ___|____      ___|____
+Noun_3 Noun_4+ Verb_6+ NP_7+ 
+ metal  fans   cost     |
+                     Noun_8+ 
+                      money 
+
+S:
+[ cat:   S ]
+
+
+2:
+            S_9 
+      _______|_______
+    NP_10         VP_5+ 
+   ___|____      ___|____
+Adj_11 Noun_4+ Verb_6+ NP_7+ 
+ metal  fans   cost     |
+                     Noun_8+ 
+                      money 
+
+S:
+[ cat:   S ]
+
+2 parses found
+
+the fan likes research
+
+1:
+             S 
+      _______|________
+     NP             VP 
+   ___|____      ____|____
+  Det   Noun   Verb     NP 
+  the    fan   likes     |
+                       Noun 
+                     research 
+
+S:
+[ cat:   S ]
+
+1 parse found
+
+the fan likes metal
+
+1:
+             S 
+      _______|_______
+     NP            VP 
+   ___|____      ___|____
+  Det   Noun   Verb    NP 
+  the    fan   likes    |
+                      Noun 
+                      metal 
+
+S:
+[ cat:   S ]
+
+1 parse found
+
+research costs money
+
+1:
+         S 
+    _____|______
+   NP         VP 
+    |       ___|____
+  Noun    Verb    NP 
+research  costs    |
+                 Noun 
+                 money 
+
+S:
+[ cat:   S ]
+
+1 parse found
+
+serious injuries need research
+
+1:
+                S 
+        ________|________
+       NP              VP 
+    ____|____       ____|____
+   Adj    Noun    Verb     NP 
+ serious injuries need      |
+                          Noun 
+                        research 
+
+S:
+[ cat:   S ]
+
+1 parse found
+
+the researcher fans the metal fan
+
+1:
+                 S 
+       __________|___________
+      NP                   VP 
+   ____|_____        _______|_______
+  Det     Noun     Verb           NP 
+  the  researcher  fans     _______|_______
+                           Det    Adj   Noun 
+                           the   metal   fan 
+
+S:
+[ cat:   S ]
+
+1 parse found
+
+the fan fans the researcher with the fan
+
+1:
+                   S 
+      _____________|_____________
+     NP                        VP 
+   ___|____      _______________|_______________
+  Det   Noun   Verb        NP                 PP 
+  the    fan   fans     ____|_____        _____|_____
+                       Det     Noun     Prep       NP 
+                       the  researcher  with     ___|____
+                                                Det   Noun 
+                                                the    fan 
+
+S:
+[ cat:   S ]
+
+1 parse found
+
+the researcher likes fans
+
+1:
+               S 
+       ________|_________
+      NP               VP 
+   ____|_____        ___|____
+  Det     Noun     Verb    NP 
+  the  researcher  likes    |
+                          Noun 
+                          fans 
+
+S:
+[ cat:   S ]
+
+1 parse found
+
+serious researchers like money
+
+1:
+                 S 
+         ________|_________
+        NP               VP 
+    _____|_____        ___|____
+   Adj      Noun     Verb    NP 
+ serious researchers like     |
+                            Noun 
+                            money 
+
+S:
+[ cat:   S ]
+
+1 parse found
+
+metal fans like likes
+
+1:
+            S_1 
+      _______|_______
+    NP_2          VP_5+ 
+   ___|____      ___|____
+Noun_3 Noun_4+ Verb_6+ NP_7+ 
+ metal  fans   like     |
+                     Noun_8+ 
+                      likes 
+
+S:
+[ cat:   S ]
+
+
+2:
+            S_9 
+      _______|_______
+    NP_10         VP_5+ 
+   ___|____      ___|____
+Adj_11 Noun_4+ Verb_6+ NP_7+ 
+ metal  fans   like     |
+                     Noun_8+ 
+                      likes 
+
+S:
+[ cat:   S ]
+
+2 parses found
+
+researchers hope for money
+
+1:
+             S 
+      _______|_______
+     NP            VP 
+      |        _____|_____
+    Noun     Verb       PP 
+ researchers hope     ___|____
+                    Prep    NP 
+                     for     |
+                           Noun 
+                           money 
+
+S:
+[ cat:   S ]
+
+1 parse found
+
+fans need money for music
+
+1:
+          S 
+   _______|________
+  NP             VP 
+   |      ________|_________
+ Noun   Verb    NP        PP 
+ fans   need     |      ___|____
+               Noun   Prep    NP 
+               money   for     |
+                             Noun 
+                             music 
+
+S:
+[ cat:   S ]
+
+1 parse found
+
+fans like spinal injuries
+
+1:
+         S 
+   ______|______
+  NP          VP 
+   |      _____|______
+ Noun   Verb        NP 
+ fans   like     ____|____
+                Adj    Noun 
+              spinal injuries 
+
+S:
+[ cat:   S ]
+
+1 parse found
+
+the researcher needs money for research
+
+1:
+                  S 
+       ___________|____________
+      NP                     VP 
+   ____|_____        _________|_________
+  Det     Noun     Verb    NP         PP 
+  the  researcher  needs    |      ____|____
+                          Noun   Prep     NP 
+                          money   for      |
+                                         Noun 
+                                       research 
+
+S:
+[ cat:   S ]
+
+1 parse found
+
+the serious fan needs the researcher
+
+1:
+                    S 
+          __________|__________
+         NP                  VP 
+   _______|________      _____|______
+  Det     Adj   Noun   Verb        NP 
+  the   serious  fan   needs    ____|_____
+                               Det     Noun 
+                               the  researcher 
+
+S:
+[ cat:   S ]
+
+1 parse found
+
+
+File parsing statistics: 19 sentences read
+          15 sentences with 1 parse
+           4 sentences with 2 parses
+19 of 19 (100.0 %) parsed at least once
