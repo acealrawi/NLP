@@ -1,0 +1,1979 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyNJHuand29KRUx3hpS4X+6g",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    },
+    "widgets": {
+      "application/vnd.jupyter.widget-state+json": {
+        "8a0a8c6fabdd40f5980ccdd00ae953af": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "VBoxModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_dom_classes": [],
+            "_model_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_model_name": "VBoxModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/controls",
+            "_view_module_version": "1.5.0",
+            "_view_name": "VBoxView",
+            "box_style": "",
+            "children": [
+              "IPY_MODEL_c20eb67535a5415a888bf8584e5899dc",
+              "IPY_MODEL_f49da1ff543b4de28725952086643b9b",
+              "IPY_MODEL_14d8d86d1864468391df7f3fe456e1db",
+              "IPY_MODEL_fd9ac8829e63451abb3f0bd8adeaea01"
+            ],
+            "layout": "IPY_MODEL_da2ca6a5eca149a8be52680927e0bb0d"
+          }
+        },
+        "3123fb5e02054722b6570ff606458646": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "HTMLModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_dom_classes": [],
+            "_model_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_model_name": "HTMLModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/controls",
+            "_view_module_version": "1.5.0",
+            "_view_name": "HTMLView",
+            "description": "",
+            "description_tooltip": null,
+            "layout": "IPY_MODEL_deb0307f64d049a2ab4d471f9fb7e190",
+            "placeholder": "​",
+            "style": "IPY_MODEL_6e2113909cc14cbcbf6a33d505a029d6",
+            "value": "<center> <img\nsrc=https://huggingface.co/front/assets/huggingface_logo-noborder.svg\nalt='Hugging Face'> <br> Copy a token from <a\nhref=\"https://huggingface.co/settings/tokens\" target=\"_blank\">your Hugging Face\ntokens page</a> and paste it below. <br> Immediately click login after copying\nyour token or it might be stored in plain text in this notebook file. </center>"
+          }
+        },
+        "5cbc4db0f7004f2e9a8827e66a05746a": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "PasswordModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_dom_classes": [],
+            "_model_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_model_name": "PasswordModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/controls",
+            "_view_module_version": "1.5.0",
+            "_view_name": "PasswordView",
+            "continuous_update": true,
+            "description": "Token:",
+            "description_tooltip": null,
+            "disabled": false,
+            "layout": "IPY_MODEL_8aed1d7eb6f247cfb2dcb94cd675926e",
+            "placeholder": "​",
+            "style": "IPY_MODEL_c3c9fa8424c346979d61d0b047d3fb87",
+            "value": ""
+          }
+        },
+        "d8d494086d954a2c9b671fa6941839af": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "CheckboxModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_dom_classes": [],
+            "_model_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_model_name": "CheckboxModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/controls",
+            "_view_module_version": "1.5.0",
+            "_view_name": "CheckboxView",
+            "description": "Add token as git credential?",
+            "description_tooltip": null,
+            "disabled": false,
+            "indent": true,
+            "layout": "IPY_MODEL_0cff1666831747bcb087d5f34d8f63e8",
+            "style": "IPY_MODEL_0f6db5231b7240c6a389358b8b7a1385",
+            "value": true
+          }
+        },
+        "07472c52d20345b5848f4d5c017af582": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "ButtonModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_dom_classes": [],
+            "_model_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_model_name": "ButtonModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/controls",
+            "_view_module_version": "1.5.0",
+            "_view_name": "ButtonView",
+            "button_style": "",
+            "description": "Login",
+            "disabled": false,
+            "icon": "",
+            "layout": "IPY_MODEL_94f13df8fed340cab547279a7e6e21c5",
+            "style": "IPY_MODEL_9d33269e24e74f3883f8b32dfce65948",
+            "tooltip": ""
+          }
+        },
+        "7c68a5585d0b4271bc178df522f365c8": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "HTMLModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_dom_classes": [],
+            "_model_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_model_name": "HTMLModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/controls",
+            "_view_module_version": "1.5.0",
+            "_view_name": "HTMLView",
+            "description": "",
+            "description_tooltip": null,
+            "layout": "IPY_MODEL_aef8046a8d54446ea53d59f4f6661c83",
+            "placeholder": "​",
+            "style": "IPY_MODEL_d7c82b802f56435993e21ab97e18a84d",
+            "value": "\n<b>Pro Tip:</b> If you don't already have one, you can create a dedicated\n'notebooks' token with 'write' access, that you can then easily reuse for all\nnotebooks. </center>"
+          }
+        },
+        "da2ca6a5eca149a8be52680927e0bb0d": {
+          "model_module": "@jupyter-widgets/base",
+          "model_name": "LayoutModel",
+          "model_module_version": "1.2.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/base",
+            "_model_module_version": "1.2.0",
+            "_model_name": "LayoutModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "LayoutView",
+            "align_content": null,
+            "align_items": "center",
+            "align_self": null,
+            "border": null,
+            "bottom": null,
+            "display": "flex",
+            "flex": null,
+            "flex_flow": "column",
+            "grid_area": null,
+            "grid_auto_columns": null,
+            "grid_auto_flow": null,
+            "grid_auto_rows": null,
+            "grid_column": null,
+            "grid_gap": null,
+            "grid_row": null,
+            "grid_template_areas": null,
+            "grid_template_columns": null,
+            "grid_template_rows": null,
+            "height": null,
+            "justify_content": null,
+            "justify_items": null,
+            "left": null,
+            "margin": null,
+            "max_height": null,
+            "max_width": null,
+            "min_height": null,
+            "min_width": null,
+            "object_fit": null,
+            "object_position": null,
+            "order": null,
+            "overflow": null,
+            "overflow_x": null,
+            "overflow_y": null,
+            "padding": null,
+            "right": null,
+            "top": null,
+            "visibility": null,
+            "width": "50%"
+          }
+        },
+        "deb0307f64d049a2ab4d471f9fb7e190": {
+          "model_module": "@jupyter-widgets/base",
+          "model_name": "LayoutModel",
+          "model_module_version": "1.2.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/base",
+            "_model_module_version": "1.2.0",
+            "_model_name": "LayoutModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "LayoutView",
+            "align_content": null,
+            "align_items": null,
+            "align_self": null,
+            "border": null,
+            "bottom": null,
+            "display": null,
+            "flex": null,
+            "flex_flow": null,
+            "grid_area": null,
+            "grid_auto_columns": null,
+            "grid_auto_flow": null,
+            "grid_auto_rows": null,
+            "grid_column": null,
+            "grid_gap": null,
+            "grid_row": null,
+            "grid_template_areas": null,
+            "grid_template_columns": null,
+            "grid_template_rows": null,
+            "height": null,
+            "justify_content": null,
+            "justify_items": null,
+            "left": null,
+            "margin": null,
+            "max_height": null,
+            "max_width": null,
+            "min_height": null,
+            "min_width": null,
+            "object_fit": null,
+            "object_position": null,
+            "order": null,
+            "overflow": null,
+            "overflow_x": null,
+            "overflow_y": null,
+            "padding": null,
+            "right": null,
+            "top": null,
+            "visibility": null,
+            "width": null
+          }
+        },
+        "6e2113909cc14cbcbf6a33d505a029d6": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "DescriptionStyleModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_model_name": "DescriptionStyleModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "StyleView",
+            "description_width": ""
+          }
+        },
+        "8aed1d7eb6f247cfb2dcb94cd675926e": {
+          "model_module": "@jupyter-widgets/base",
+          "model_name": "LayoutModel",
+          "model_module_version": "1.2.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/base",
+            "_model_module_version": "1.2.0",
+            "_model_name": "LayoutModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "LayoutView",
+            "align_content": null,
+            "align_items": null,
+            "align_self": null,
+            "border": null,
+            "bottom": null,
+            "display": null,
+            "flex": null,
+            "flex_flow": null,
+            "grid_area": null,
+            "grid_auto_columns": null,
+            "grid_auto_flow": null,
+            "grid_auto_rows": null,
+            "grid_column": null,
+            "grid_gap": null,
+            "grid_row": null,
+            "grid_template_areas": null,
+            "grid_template_columns": null,
+            "grid_template_rows": null,
+            "height": null,
+            "justify_content": null,
+            "justify_items": null,
+            "left": null,
+            "margin": null,
+            "max_height": null,
+            "max_width": null,
+            "min_height": null,
+            "min_width": null,
+            "object_fit": null,
+            "object_position": null,
+            "order": null,
+            "overflow": null,
+            "overflow_x": null,
+            "overflow_y": null,
+            "padding": null,
+            "right": null,
+            "top": null,
+            "visibility": null,
+            "width": null
+          }
+        },
+        "c3c9fa8424c346979d61d0b047d3fb87": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "DescriptionStyleModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_model_name": "DescriptionStyleModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "StyleView",
+            "description_width": ""
+          }
+        },
+        "0cff1666831747bcb087d5f34d8f63e8": {
+          "model_module": "@jupyter-widgets/base",
+          "model_name": "LayoutModel",
+          "model_module_version": "1.2.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/base",
+            "_model_module_version": "1.2.0",
+            "_model_name": "LayoutModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "LayoutView",
+            "align_content": null,
+            "align_items": null,
+            "align_self": null,
+            "border": null,
+            "bottom": null,
+            "display": null,
+            "flex": null,
+            "flex_flow": null,
+            "grid_area": null,
+            "grid_auto_columns": null,
+            "grid_auto_flow": null,
+            "grid_auto_rows": null,
+            "grid_column": null,
+            "grid_gap": null,
+            "grid_row": null,
+            "grid_template_areas": null,
+            "grid_template_columns": null,
+            "grid_template_rows": null,
+            "height": null,
+            "justify_content": null,
+            "justify_items": null,
+            "left": null,
+            "margin": null,
+            "max_height": null,
+            "max_width": null,
+            "min_height": null,
+            "min_width": null,
+            "object_fit": null,
+            "object_position": null,
+            "order": null,
+            "overflow": null,
+            "overflow_x": null,
+            "overflow_y": null,
+            "padding": null,
+            "right": null,
+            "top": null,
+            "visibility": null,
+            "width": null
+          }
+        },
+        "0f6db5231b7240c6a389358b8b7a1385": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "DescriptionStyleModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_model_name": "DescriptionStyleModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "StyleView",
+            "description_width": ""
+          }
+        },
+        "94f13df8fed340cab547279a7e6e21c5": {
+          "model_module": "@jupyter-widgets/base",
+          "model_name": "LayoutModel",
+          "model_module_version": "1.2.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/base",
+            "_model_module_version": "1.2.0",
+            "_model_name": "LayoutModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "LayoutView",
+            "align_content": null,
+            "align_items": null,
+            "align_self": null,
+            "border": null,
+            "bottom": null,
+            "display": null,
+            "flex": null,
+            "flex_flow": null,
+            "grid_area": null,
+            "grid_auto_columns": null,
+            "grid_auto_flow": null,
+            "grid_auto_rows": null,
+            "grid_column": null,
+            "grid_gap": null,
+            "grid_row": null,
+            "grid_template_areas": null,
+            "grid_template_columns": null,
+            "grid_template_rows": null,
+            "height": null,
+            "justify_content": null,
+            "justify_items": null,
+            "left": null,
+            "margin": null,
+            "max_height": null,
+            "max_width": null,
+            "min_height": null,
+            "min_width": null,
+            "object_fit": null,
+            "object_position": null,
+            "order": null,
+            "overflow": null,
+            "overflow_x": null,
+            "overflow_y": null,
+            "padding": null,
+            "right": null,
+            "top": null,
+            "visibility": null,
+            "width": null
+          }
+        },
+        "9d33269e24e74f3883f8b32dfce65948": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "ButtonStyleModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_model_name": "ButtonStyleModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "StyleView",
+            "button_color": null,
+            "font_weight": ""
+          }
+        },
+        "aef8046a8d54446ea53d59f4f6661c83": {
+          "model_module": "@jupyter-widgets/base",
+          "model_name": "LayoutModel",
+          "model_module_version": "1.2.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/base",
+            "_model_module_version": "1.2.0",
+            "_model_name": "LayoutModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "LayoutView",
+            "align_content": null,
+            "align_items": null,
+            "align_self": null,
+            "border": null,
+            "bottom": null,
+            "display": null,
+            "flex": null,
+            "flex_flow": null,
+            "grid_area": null,
+            "grid_auto_columns": null,
+            "grid_auto_flow": null,
+            "grid_auto_rows": null,
+            "grid_column": null,
+            "grid_gap": null,
+            "grid_row": null,
+            "grid_template_areas": null,
+            "grid_template_columns": null,
+            "grid_template_rows": null,
+            "height": null,
+            "justify_content": null,
+            "justify_items": null,
+            "left": null,
+            "margin": null,
+            "max_height": null,
+            "max_width": null,
+            "min_height": null,
+            "min_width": null,
+            "object_fit": null,
+            "object_position": null,
+            "order": null,
+            "overflow": null,
+            "overflow_x": null,
+            "overflow_y": null,
+            "padding": null,
+            "right": null,
+            "top": null,
+            "visibility": null,
+            "width": null
+          }
+        },
+        "d7c82b802f56435993e21ab97e18a84d": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "DescriptionStyleModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_model_name": "DescriptionStyleModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "StyleView",
+            "description_width": ""
+          }
+        },
+        "2ddffa1b072044fc91f9a80af02561d2": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "LabelModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_dom_classes": [],
+            "_model_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_model_name": "LabelModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/controls",
+            "_view_module_version": "1.5.0",
+            "_view_name": "LabelView",
+            "description": "",
+            "description_tooltip": null,
+            "layout": "IPY_MODEL_d70d30ad8f0e490caf4e0c6553478c59",
+            "placeholder": "​",
+            "style": "IPY_MODEL_f01ede18abb54f349ec4a4f3c59662c6",
+            "value": "Connecting..."
+          }
+        },
+        "d70d30ad8f0e490caf4e0c6553478c59": {
+          "model_module": "@jupyter-widgets/base",
+          "model_name": "LayoutModel",
+          "model_module_version": "1.2.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/base",
+            "_model_module_version": "1.2.0",
+            "_model_name": "LayoutModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "LayoutView",
+            "align_content": null,
+            "align_items": null,
+            "align_self": null,
+            "border": null,
+            "bottom": null,
+            "display": null,
+            "flex": null,
+            "flex_flow": null,
+            "grid_area": null,
+            "grid_auto_columns": null,
+            "grid_auto_flow": null,
+            "grid_auto_rows": null,
+            "grid_column": null,
+            "grid_gap": null,
+            "grid_row": null,
+            "grid_template_areas": null,
+            "grid_template_columns": null,
+            "grid_template_rows": null,
+            "height": null,
+            "justify_content": null,
+            "justify_items": null,
+            "left": null,
+            "margin": null,
+            "max_height": null,
+            "max_width": null,
+            "min_height": null,
+            "min_width": null,
+            "object_fit": null,
+            "object_position": null,
+            "order": null,
+            "overflow": null,
+            "overflow_x": null,
+            "overflow_y": null,
+            "padding": null,
+            "right": null,
+            "top": null,
+            "visibility": null,
+            "width": null
+          }
+        },
+        "f01ede18abb54f349ec4a4f3c59662c6": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "DescriptionStyleModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_model_name": "DescriptionStyleModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "StyleView",
+            "description_width": ""
+          }
+        },
+        "c20eb67535a5415a888bf8584e5899dc": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "LabelModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_dom_classes": [],
+            "_model_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_model_name": "LabelModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/controls",
+            "_view_module_version": "1.5.0",
+            "_view_name": "LabelView",
+            "description": "",
+            "description_tooltip": null,
+            "layout": "IPY_MODEL_3e0e75b4aeb747d79e012599bae04b5e",
+            "placeholder": "​",
+            "style": "IPY_MODEL_014abf847b4f41d5b69be579f6b6bea2",
+            "value": "Token is valid (permission: write)."
+          }
+        },
+        "f49da1ff543b4de28725952086643b9b": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "LabelModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_dom_classes": [],
+            "_model_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_model_name": "LabelModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/controls",
+            "_view_module_version": "1.5.0",
+            "_view_name": "LabelView",
+            "description": "",
+            "description_tooltip": null,
+            "layout": "IPY_MODEL_697d18680d514a73a0e1c53b8d604140",
+            "placeholder": "​",
+            "style": "IPY_MODEL_739ef426c0914ff5a0b3455e6e990c27",
+            "value": "Your token has been saved in your configured git credential helpers (store)."
+          }
+        },
+        "14d8d86d1864468391df7f3fe456e1db": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "LabelModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_dom_classes": [],
+            "_model_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_model_name": "LabelModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/controls",
+            "_view_module_version": "1.5.0",
+            "_view_name": "LabelView",
+            "description": "",
+            "description_tooltip": null,
+            "layout": "IPY_MODEL_b919bb51f2dd4446806eaaa67d366fb3",
+            "placeholder": "​",
+            "style": "IPY_MODEL_f9f37ef093454b2c9f457697d082d5f3",
+            "value": "Your token has been saved to /root/.cache/huggingface/token"
+          }
+        },
+        "fd9ac8829e63451abb3f0bd8adeaea01": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "LabelModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_dom_classes": [],
+            "_model_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_model_name": "LabelModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/controls",
+            "_view_module_version": "1.5.0",
+            "_view_name": "LabelView",
+            "description": "",
+            "description_tooltip": null,
+            "layout": "IPY_MODEL_87246a731fff4dcaa27fa5c864dfeade",
+            "placeholder": "​",
+            "style": "IPY_MODEL_df1d35b75d4a42979b875e2eedbdeff3",
+            "value": "Login successful"
+          }
+        },
+        "3e0e75b4aeb747d79e012599bae04b5e": {
+          "model_module": "@jupyter-widgets/base",
+          "model_name": "LayoutModel",
+          "model_module_version": "1.2.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/base",
+            "_model_module_version": "1.2.0",
+            "_model_name": "LayoutModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "LayoutView",
+            "align_content": null,
+            "align_items": null,
+            "align_self": null,
+            "border": null,
+            "bottom": null,
+            "display": null,
+            "flex": null,
+            "flex_flow": null,
+            "grid_area": null,
+            "grid_auto_columns": null,
+            "grid_auto_flow": null,
+            "grid_auto_rows": null,
+            "grid_column": null,
+            "grid_gap": null,
+            "grid_row": null,
+            "grid_template_areas": null,
+            "grid_template_columns": null,
+            "grid_template_rows": null,
+            "height": null,
+            "justify_content": null,
+            "justify_items": null,
+            "left": null,
+            "margin": null,
+            "max_height": null,
+            "max_width": null,
+            "min_height": null,
+            "min_width": null,
+            "object_fit": null,
+            "object_position": null,
+            "order": null,
+            "overflow": null,
+            "overflow_x": null,
+            "overflow_y": null,
+            "padding": null,
+            "right": null,
+            "top": null,
+            "visibility": null,
+            "width": null
+          }
+        },
+        "014abf847b4f41d5b69be579f6b6bea2": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "DescriptionStyleModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_model_name": "DescriptionStyleModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "StyleView",
+            "description_width": ""
+          }
+        },
+        "697d18680d514a73a0e1c53b8d604140": {
+          "model_module": "@jupyter-widgets/base",
+          "model_name": "LayoutModel",
+          "model_module_version": "1.2.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/base",
+            "_model_module_version": "1.2.0",
+            "_model_name": "LayoutModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "LayoutView",
+            "align_content": null,
+            "align_items": null,
+            "align_self": null,
+            "border": null,
+            "bottom": null,
+            "display": null,
+            "flex": null,
+            "flex_flow": null,
+            "grid_area": null,
+            "grid_auto_columns": null,
+            "grid_auto_flow": null,
+            "grid_auto_rows": null,
+            "grid_column": null,
+            "grid_gap": null,
+            "grid_row": null,
+            "grid_template_areas": null,
+            "grid_template_columns": null,
+            "grid_template_rows": null,
+            "height": null,
+            "justify_content": null,
+            "justify_items": null,
+            "left": null,
+            "margin": null,
+            "max_height": null,
+            "max_width": null,
+            "min_height": null,
+            "min_width": null,
+            "object_fit": null,
+            "object_position": null,
+            "order": null,
+            "overflow": null,
+            "overflow_x": null,
+            "overflow_y": null,
+            "padding": null,
+            "right": null,
+            "top": null,
+            "visibility": null,
+            "width": null
+          }
+        },
+        "739ef426c0914ff5a0b3455e6e990c27": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "DescriptionStyleModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_model_name": "DescriptionStyleModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "StyleView",
+            "description_width": ""
+          }
+        },
+        "b919bb51f2dd4446806eaaa67d366fb3": {
+          "model_module": "@jupyter-widgets/base",
+          "model_name": "LayoutModel",
+          "model_module_version": "1.2.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/base",
+            "_model_module_version": "1.2.0",
+            "_model_name": "LayoutModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "LayoutView",
+            "align_content": null,
+            "align_items": null,
+            "align_self": null,
+            "border": null,
+            "bottom": null,
+            "display": null,
+            "flex": null,
+            "flex_flow": null,
+            "grid_area": null,
+            "grid_auto_columns": null,
+            "grid_auto_flow": null,
+            "grid_auto_rows": null,
+            "grid_column": null,
+            "grid_gap": null,
+            "grid_row": null,
+            "grid_template_areas": null,
+            "grid_template_columns": null,
+            "grid_template_rows": null,
+            "height": null,
+            "justify_content": null,
+            "justify_items": null,
+            "left": null,
+            "margin": null,
+            "max_height": null,
+            "max_width": null,
+            "min_height": null,
+            "min_width": null,
+            "object_fit": null,
+            "object_position": null,
+            "order": null,
+            "overflow": null,
+            "overflow_x": null,
+            "overflow_y": null,
+            "padding": null,
+            "right": null,
+            "top": null,
+            "visibility": null,
+            "width": null
+          }
+        },
+        "f9f37ef093454b2c9f457697d082d5f3": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "DescriptionStyleModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_model_name": "DescriptionStyleModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "StyleView",
+            "description_width": ""
+          }
+        },
+        "87246a731fff4dcaa27fa5c864dfeade": {
+          "model_module": "@jupyter-widgets/base",
+          "model_name": "LayoutModel",
+          "model_module_version": "1.2.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/base",
+            "_model_module_version": "1.2.0",
+            "_model_name": "LayoutModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "LayoutView",
+            "align_content": null,
+            "align_items": null,
+            "align_self": null,
+            "border": null,
+            "bottom": null,
+            "display": null,
+            "flex": null,
+            "flex_flow": null,
+            "grid_area": null,
+            "grid_auto_columns": null,
+            "grid_auto_flow": null,
+            "grid_auto_rows": null,
+            "grid_column": null,
+            "grid_gap": null,
+            "grid_row": null,
+            "grid_template_areas": null,
+            "grid_template_columns": null,
+            "grid_template_rows": null,
+            "height": null,
+            "justify_content": null,
+            "justify_items": null,
+            "left": null,
+            "margin": null,
+            "max_height": null,
+            "max_width": null,
+            "min_height": null,
+            "min_width": null,
+            "object_fit": null,
+            "object_position": null,
+            "order": null,
+            "overflow": null,
+            "overflow_x": null,
+            "overflow_y": null,
+            "padding": null,
+            "right": null,
+            "top": null,
+            "visibility": null,
+            "width": null
+          }
+        },
+        "df1d35b75d4a42979b875e2eedbdeff3": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "DescriptionStyleModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_model_name": "DescriptionStyleModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "StyleView",
+            "description_width": ""
+          }
+        }
+      }
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/acealrawi/NLP/blob/main/Updated%20one%20\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 1,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "CGPOVI2Zym6G",
+        "outputId": "25210f55-5fdf-4da7-89a5-df4162558f4d"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Requirement already satisfied: datasets in /usr/local/lib/python3.10/dist-packages (2.14.6)\n",
+            "Requirement already satisfied: transformers in /usr/local/lib/python3.10/dist-packages (4.34.1)\n",
+            "Requirement already satisfied: huggingface_hub in /usr/local/lib/python3.10/dist-packages (0.17.3)\n",
+            "Requirement already satisfied: numpy>=1.17 in /usr/local/lib/python3.10/dist-packages (from datasets) (1.23.5)\n",
+            "Requirement already satisfied: pyarrow>=8.0.0 in /usr/local/lib/python3.10/dist-packages (from datasets) (9.0.0)\n",
+            "Requirement already satisfied: dill<0.3.8,>=0.3.0 in /usr/local/lib/python3.10/dist-packages (from datasets) (0.3.7)\n",
+            "Requirement already satisfied: pandas in /usr/local/lib/python3.10/dist-packages (from datasets) (1.5.3)\n",
+            "Requirement already satisfied: requests>=2.19.0 in /usr/local/lib/python3.10/dist-packages (from datasets) (2.31.0)\n",
+            "Requirement already satisfied: tqdm>=4.62.1 in /usr/local/lib/python3.10/dist-packages (from datasets) (4.66.1)\n",
+            "Requirement already satisfied: xxhash in /usr/local/lib/python3.10/dist-packages (from datasets) (3.4.1)\n",
+            "Requirement already satisfied: multiprocess in /usr/local/lib/python3.10/dist-packages (from datasets) (0.70.15)\n",
+            "Requirement already satisfied: fsspec[http]<=2023.10.0,>=2023.1.0 in /usr/local/lib/python3.10/dist-packages (from datasets) (2023.6.0)\n",
+            "Requirement already satisfied: aiohttp in /usr/local/lib/python3.10/dist-packages (from datasets) (3.8.6)\n",
+            "Requirement already satisfied: packaging in /usr/local/lib/python3.10/dist-packages (from datasets) (23.2)\n",
+            "Requirement already satisfied: pyyaml>=5.1 in /usr/local/lib/python3.10/dist-packages (from datasets) (6.0.1)\n",
+            "Requirement already satisfied: filelock in /usr/local/lib/python3.10/dist-packages (from transformers) (3.12.4)\n",
+            "Requirement already satisfied: regex!=2019.12.17 in /usr/local/lib/python3.10/dist-packages (from transformers) (2023.6.3)\n",
+            "Requirement already satisfied: tokenizers<0.15,>=0.14 in /usr/local/lib/python3.10/dist-packages (from transformers) (0.14.1)\n",
+            "Requirement already satisfied: safetensors>=0.3.1 in /usr/local/lib/python3.10/dist-packages (from transformers) (0.4.0)\n",
+            "Requirement already satisfied: typing-extensions>=3.7.4.3 in /usr/local/lib/python3.10/dist-packages (from huggingface_hub) (4.5.0)\n",
+            "Requirement already satisfied: attrs>=17.3.0 in /usr/local/lib/python3.10/dist-packages (from aiohttp->datasets) (23.1.0)\n",
+            "Requirement already satisfied: charset-normalizer<4.0,>=2.0 in /usr/local/lib/python3.10/dist-packages (from aiohttp->datasets) (3.3.0)\n",
+            "Requirement already satisfied: multidict<7.0,>=4.5 in /usr/local/lib/python3.10/dist-packages (from aiohttp->datasets) (6.0.4)\n",
+            "Requirement already satisfied: async-timeout<5.0,>=4.0.0a3 in /usr/local/lib/python3.10/dist-packages (from aiohttp->datasets) (4.0.3)\n",
+            "Requirement already satisfied: yarl<2.0,>=1.0 in /usr/local/lib/python3.10/dist-packages (from aiohttp->datasets) (1.9.2)\n",
+            "Requirement already satisfied: frozenlist>=1.1.1 in /usr/local/lib/python3.10/dist-packages (from aiohttp->datasets) (1.4.0)\n",
+            "Requirement already satisfied: aiosignal>=1.1.2 in /usr/local/lib/python3.10/dist-packages (from aiohttp->datasets) (1.3.1)\n",
+            "Requirement already satisfied: idna<4,>=2.5 in /usr/local/lib/python3.10/dist-packages (from requests>=2.19.0->datasets) (3.4)\n",
+            "Requirement already satisfied: urllib3<3,>=1.21.1 in /usr/local/lib/python3.10/dist-packages (from requests>=2.19.0->datasets) (2.0.7)\n",
+            "Requirement already satisfied: certifi>=2017.4.17 in /usr/local/lib/python3.10/dist-packages (from requests>=2.19.0->datasets) (2023.7.22)\n",
+            "Requirement already satisfied: python-dateutil>=2.8.1 in /usr/local/lib/python3.10/dist-packages (from pandas->datasets) (2.8.2)\n",
+            "Requirement already satisfied: pytz>=2020.1 in /usr/local/lib/python3.10/dist-packages (from pandas->datasets) (2023.3.post1)\n",
+            "Requirement already satisfied: six>=1.5 in /usr/local/lib/python3.10/dist-packages (from python-dateutil>=2.8.1->pandas->datasets) (1.16.0)\n"
+          ]
+        }
+      ],
+      "source": [
+        "#Installing the libraries\n",
+        "!pip install datasets transformers huggingface_hub"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "from datasets import load_dataset\n",
+        "women_clothing= load_dataset(\"saattrupdan/womens-clothing-ecommerce-reviews\")\n"
+      ],
+      "metadata": {
+        "id": "FuDNHvc6y31w"
+      },
+      "execution_count": 2,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "women_clothing"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "h9rFyVRLy3rs",
+        "outputId": "17cef672-9bb0-428b-f72a-80c2ebbab896"
+      },
+      "execution_count": 3,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "DatasetDict({\n",
+              "    train: Dataset({\n",
+              "        features: ['review_text', 'age', 'rating', 'positive_feedback_count', 'division_name', 'department_name', 'class_name', 'recommended_ind'],\n",
+              "        num_rows: 20641\n",
+              "    })\n",
+              "    test: Dataset({\n",
+              "        features: ['review_text', 'age', 'rating', 'positive_feedback_count', 'division_name', 'department_name', 'class_name', 'recommended_ind'],\n",
+              "        num_rows: 1000\n",
+              "    })\n",
+              "    val: Dataset({\n",
+              "        features: ['review_text', 'age', 'rating', 'positive_feedback_count', 'division_name', 'department_name', 'class_name', 'recommended_ind'],\n",
+              "        num_rows: 1000\n",
+              "    })\n",
+              "})"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 3
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "train_set = women_clothing[\"train\"]\n",
+        "train_set"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "gvvB404By3lO",
+        "outputId": "add21f22-4596-4b13-d0fb-0533d5a22679"
+      },
+      "execution_count": 4,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "Dataset({\n",
+              "    features: ['review_text', 'age', 'rating', 'positive_feedback_count', 'division_name', 'department_name', 'class_name', 'recommended_ind'],\n",
+              "    num_rows: 20641\n",
+              "})"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 4
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "train_set[0]"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "XYQXAsZ_y3dd",
+        "outputId": "98ce315f-d0ba-412b-fbc3-442af5897f21"
+      },
+      "execution_count": 5,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "{'review_text': 'I loved this shirt until the first time i washed it. it shrunk so much it became unwearable. when i returned it the salesperson said she had also bought this shirt and the same thing happened.',\n",
+              " 'age': 39,\n",
+              " 'rating': 1,\n",
+              " 'positive_feedback_count': 0,\n",
+              " 'division_name': 'General',\n",
+              " 'department_name': 'Tops',\n",
+              " 'class_name': 'Knits',\n",
+              " 'recommended_ind': 0}"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 5
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#converting it into pandas\n",
+        "women_clothing.set_format(type=\"pandas\")\n",
+        "df=women_clothing[\"train\"][:]\n",
+        "df.head()"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 241
+        },
+        "id": "cuRmCj1Zy3Rc",
+        "outputId": "a84e9660-7722-41e7-d8fd-0738f139ab22"
+      },
+      "execution_count": 6,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "                                         review_text  age  rating  \\\n",
+              "0  I loved this shirt until the first time i wash...   39       1   \n",
+              "1  This sweater was unflattering me, very boxy an...   44       3   \n",
+              "2  I fell in love with these bottoms at first sit...   41       5   \n",
+              "3  I love the dress!  i purchased this dress to w...   34       5   \n",
+              "4  I fell in love with this dress when i saw it o...   46       5   \n",
+              "\n",
+              "   positive_feedback_count   division_name department_name class_name  \\\n",
+              "0                        0         General            Tops      Knits   \n",
+              "1                        0         General            Tops   Sweaters   \n",
+              "2                        2         General         Bottoms      Pants   \n",
+              "3                        0         General         Dresses    Dresses   \n",
+              "4                        0  General Petite         Dresses    Dresses   \n",
+              "\n",
+              "   recommended_ind  \n",
+              "0                0  \n",
+              "1                0  \n",
+              "2                1  \n",
+              "3                1  \n",
+              "4                1  "
+            ],
+            "text/html": [
+              "\n",
+              "  <div id=\"df-b5f173b3-75a9-411e-927e-1b98e9aac184\" class=\"colab-df-container\">\n",
+              "    <div>\n",
+              "<style scoped>\n",
+              "    .dataframe tbody tr th:only-of-type {\n",
+              "        vertical-align: middle;\n",
+              "    }\n",
+              "\n",
+              "    .dataframe tbody tr th {\n",
+              "        vertical-align: top;\n",
+              "    }\n",
+              "\n",
+              "    .dataframe thead th {\n",
+              "        text-align: right;\n",
+              "    }\n",
+              "</style>\n",
+              "<table border=\"1\" class=\"dataframe\">\n",
+              "  <thead>\n",
+              "    <tr style=\"text-align: right;\">\n",
+              "      <th></th>\n",
+              "      <th>review_text</th>\n",
+              "      <th>age</th>\n",
+              "      <th>rating</th>\n",
+              "      <th>positive_feedback_count</th>\n",
+              "      <th>division_name</th>\n",
+              "      <th>department_name</th>\n",
+              "      <th>class_name</th>\n",
+              "      <th>recommended_ind</th>\n",
+              "    </tr>\n",
+              "  </thead>\n",
+              "  <tbody>\n",
+              "    <tr>\n",
+              "      <th>0</th>\n",
+              "      <td>I loved this shirt until the first time i wash...</td>\n",
+              "      <td>39</td>\n",
+              "      <td>1</td>\n",
+              "      <td>0</td>\n",
+              "      <td>General</td>\n",
+              "      <td>Tops</td>\n",
+              "      <td>Knits</td>\n",
+              "      <td>0</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>1</th>\n",
+              "      <td>This sweater was unflattering me, very boxy an...</td>\n",
+              "      <td>44</td>\n",
+              "      <td>3</td>\n",
+              "      <td>0</td>\n",
+              "      <td>General</td>\n",
+              "      <td>Tops</td>\n",
+              "      <td>Sweaters</td>\n",
+              "      <td>0</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>2</th>\n",
+              "      <td>I fell in love with these bottoms at first sit...</td>\n",
+              "      <td>41</td>\n",
+              "      <td>5</td>\n",
+              "      <td>2</td>\n",
+              "      <td>General</td>\n",
+              "      <td>Bottoms</td>\n",
+              "      <td>Pants</td>\n",
+              "      <td>1</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>3</th>\n",
+              "      <td>I love the dress!  i purchased this dress to w...</td>\n",
+              "      <td>34</td>\n",
+              "      <td>5</td>\n",
+              "      <td>0</td>\n",
+              "      <td>General</td>\n",
+              "      <td>Dresses</td>\n",
+              "      <td>Dresses</td>\n",
+              "      <td>1</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>4</th>\n",
+              "      <td>I fell in love with this dress when i saw it o...</td>\n",
+              "      <td>46</td>\n",
+              "      <td>5</td>\n",
+              "      <td>0</td>\n",
+              "      <td>General Petite</td>\n",
+              "      <td>Dresses</td>\n",
+              "      <td>Dresses</td>\n",
+              "      <td>1</td>\n",
+              "    </tr>\n",
+              "  </tbody>\n",
+              "</table>\n",
+              "</div>\n",
+              "    <div class=\"colab-df-buttons\">\n",
+              "\n",
+              "  <div class=\"colab-df-container\">\n",
+              "    <button class=\"colab-df-convert\" onclick=\"convertToInteractive('df-b5f173b3-75a9-411e-927e-1b98e9aac184')\"\n",
+              "            title=\"Convert this dataframe to an interactive table.\"\n",
+              "            style=\"display:none;\">\n",
+              "\n",
+              "  <svg xmlns=\"http://www.w3.org/2000/svg\" height=\"24px\" viewBox=\"0 -960 960 960\">\n",
+              "    <path d=\"M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z\"/>\n",
+              "  </svg>\n",
+              "    </button>\n",
+              "\n",
+              "  <style>\n",
+              "    .colab-df-container {\n",
+              "      display:flex;\n",
+              "      gap: 12px;\n",
+              "    }\n",
+              "\n",
+              "    .colab-df-convert {\n",
+              "      background-color: #E8F0FE;\n",
+              "      border: none;\n",
+              "      border-radius: 50%;\n",
+              "      cursor: pointer;\n",
+              "      display: none;\n",
+              "      fill: #1967D2;\n",
+              "      height: 32px;\n",
+              "      padding: 0 0 0 0;\n",
+              "      width: 32px;\n",
+              "    }\n",
+              "\n",
+              "    .colab-df-convert:hover {\n",
+              "      background-color: #E2EBFA;\n",
+              "      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);\n",
+              "      fill: #174EA6;\n",
+              "    }\n",
+              "\n",
+              "    .colab-df-buttons div {\n",
+              "      margin-bottom: 4px;\n",
+              "    }\n",
+              "\n",
+              "    [theme=dark] .colab-df-convert {\n",
+              "      background-color: #3B4455;\n",
+              "      fill: #D2E3FC;\n",
+              "    }\n",
+              "\n",
+              "    [theme=dark] .colab-df-convert:hover {\n",
+              "      background-color: #434B5C;\n",
+              "      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);\n",
+              "      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));\n",
+              "      fill: #FFFFFF;\n",
+              "    }\n",
+              "  </style>\n",
+              "\n",
+              "    <script>\n",
+              "      const buttonEl =\n",
+              "        document.querySelector('#df-b5f173b3-75a9-411e-927e-1b98e9aac184 button.colab-df-convert');\n",
+              "      buttonEl.style.display =\n",
+              "        google.colab.kernel.accessAllowed ? 'block' : 'none';\n",
+              "\n",
+              "      async function convertToInteractive(key) {\n",
+              "        const element = document.querySelector('#df-b5f173b3-75a9-411e-927e-1b98e9aac184');\n",
+              "        const dataTable =\n",
+              "          await google.colab.kernel.invokeFunction('convertToInteractive',\n",
+              "                                                    [key], {});\n",
+              "        if (!dataTable) return;\n",
+              "\n",
+              "        const docLinkHtml = 'Like what you see? Visit the ' +\n",
+              "          '<a target=\"_blank\" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'\n",
+              "          + ' to learn more about interactive tables.';\n",
+              "        element.innerHTML = '';\n",
+              "        dataTable['output_type'] = 'display_data';\n",
+              "        await google.colab.output.renderOutput(dataTable, element);\n",
+              "        const docLink = document.createElement('div');\n",
+              "        docLink.innerHTML = docLinkHtml;\n",
+              "        element.appendChild(docLink);\n",
+              "      }\n",
+              "    </script>\n",
+              "  </div>\n",
+              "\n",
+              "\n",
+              "<div id=\"df-c1eaad37-c32f-45f5-943a-6445d23cb34a\">\n",
+              "  <button class=\"colab-df-quickchart\" onclick=\"quickchart('df-c1eaad37-c32f-45f5-943a-6445d23cb34a')\"\n",
+              "            title=\"Suggest charts.\"\n",
+              "            style=\"display:none;\">\n",
+              "\n",
+              "<svg xmlns=\"http://www.w3.org/2000/svg\" height=\"24px\"viewBox=\"0 0 24 24\"\n",
+              "     width=\"24px\">\n",
+              "    <g>\n",
+              "        <path d=\"M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z\"/>\n",
+              "    </g>\n",
+              "</svg>\n",
+              "  </button>\n",
+              "\n",
+              "<style>\n",
+              "  .colab-df-quickchart {\n",
+              "      --bg-color: #E8F0FE;\n",
+              "      --fill-color: #1967D2;\n",
+              "      --hover-bg-color: #E2EBFA;\n",
+              "      --hover-fill-color: #174EA6;\n",
+              "      --disabled-fill-color: #AAA;\n",
+              "      --disabled-bg-color: #DDD;\n",
+              "  }\n",
+              "\n",
+              "  [theme=dark] .colab-df-quickchart {\n",
+              "      --bg-color: #3B4455;\n",
+              "      --fill-color: #D2E3FC;\n",
+              "      --hover-bg-color: #434B5C;\n",
+              "      --hover-fill-color: #FFFFFF;\n",
+              "      --disabled-bg-color: #3B4455;\n",
+              "      --disabled-fill-color: #666;\n",
+              "  }\n",
+              "\n",
+              "  .colab-df-quickchart {\n",
+              "    background-color: var(--bg-color);\n",
+              "    border: none;\n",
+              "    border-radius: 50%;\n",
+              "    cursor: pointer;\n",
+              "    display: none;\n",
+              "    fill: var(--fill-color);\n",
+              "    height: 32px;\n",
+              "    padding: 0;\n",
+              "    width: 32px;\n",
+              "  }\n",
+              "\n",
+              "  .colab-df-quickchart:hover {\n",
+              "    background-color: var(--hover-bg-color);\n",
+              "    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);\n",
+              "    fill: var(--button-hover-fill-color);\n",
+              "  }\n",
+              "\n",
+              "  .colab-df-quickchart-complete:disabled,\n",
+              "  .colab-df-quickchart-complete:disabled:hover {\n",
+              "    background-color: var(--disabled-bg-color);\n",
+              "    fill: var(--disabled-fill-color);\n",
+              "    box-shadow: none;\n",
+              "  }\n",
+              "\n",
+              "  .colab-df-spinner {\n",
+              "    border: 2px solid var(--fill-color);\n",
+              "    border-color: transparent;\n",
+              "    border-bottom-color: var(--fill-color);\n",
+              "    animation:\n",
+              "      spin 1s steps(1) infinite;\n",
+              "  }\n",
+              "\n",
+              "  @keyframes spin {\n",
+              "    0% {\n",
+              "      border-color: transparent;\n",
+              "      border-bottom-color: var(--fill-color);\n",
+              "      border-left-color: var(--fill-color);\n",
+              "    }\n",
+              "    20% {\n",
+              "      border-color: transparent;\n",
+              "      border-left-color: var(--fill-color);\n",
+              "      border-top-color: var(--fill-color);\n",
+              "    }\n",
+              "    30% {\n",
+              "      border-color: transparent;\n",
+              "      border-left-color: var(--fill-color);\n",
+              "      border-top-color: var(--fill-color);\n",
+              "      border-right-color: var(--fill-color);\n",
+              "    }\n",
+              "    40% {\n",
+              "      border-color: transparent;\n",
+              "      border-right-color: var(--fill-color);\n",
+              "      border-top-color: var(--fill-color);\n",
+              "    }\n",
+              "    60% {\n",
+              "      border-color: transparent;\n",
+              "      border-right-color: var(--fill-color);\n",
+              "    }\n",
+              "    80% {\n",
+              "      border-color: transparent;\n",
+              "      border-right-color: var(--fill-color);\n",
+              "      border-bottom-color: var(--fill-color);\n",
+              "    }\n",
+              "    90% {\n",
+              "      border-color: transparent;\n",
+              "      border-bottom-color: var(--fill-color);\n",
+              "    }\n",
+              "  }\n",
+              "</style>\n",
+              "\n",
+              "  <script>\n",
+              "    async function quickchart(key) {\n",
+              "      const quickchartButtonEl =\n",
+              "        document.querySelector('#' + key + ' button');\n",
+              "      quickchartButtonEl.disabled = true;  // To prevent multiple clicks.\n",
+              "      quickchartButtonEl.classList.add('colab-df-spinner');\n",
+              "      try {\n",
+              "        const charts = await google.colab.kernel.invokeFunction(\n",
+              "            'suggestCharts', [key], {});\n",
+              "      } catch (error) {\n",
+              "        console.error('Error during call to suggestCharts:', error);\n",
+              "      }\n",
+              "      quickchartButtonEl.classList.remove('colab-df-spinner');\n",
+              "      quickchartButtonEl.classList.add('colab-df-quickchart-complete');\n",
+              "    }\n",
+              "    (() => {\n",
+              "      let quickchartButtonEl =\n",
+              "        document.querySelector('#df-c1eaad37-c32f-45f5-943a-6445d23cb34a button');\n",
+              "      quickchartButtonEl.style.display =\n",
+              "        google.colab.kernel.accessAllowed ? 'block' : 'none';\n",
+              "    })();\n",
+              "  </script>\n",
+              "</div>\n",
+              "    </div>\n",
+              "  </div>\n"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 6
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import matplotlib.pyplot as plt\n",
+        "import seaborn as sns\n",
+        "sns.set_theme()\n",
+        "df[\"rating\"].value_counts(ascending=True).plot.barh()\n",
+        "plt.title(\"The number of rating\")\n",
+        "plt.show()"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 457
+        },
+        "id": "Dsio6_6Dy21R",
+        "outputId": "a5d6e91c-dac6-46b3-de84-bc2484235f24"
+      },
+      "execution_count": 7,
+      "outputs": [
+        {
+          "output_type": "display_data",
+          "data": {
+            "text/plain": [
+              "<Figure size 640x480 with 1 Axes>"
+            ],
+            "image/png": "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\n"
+          },
+          "metadata": {}
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "women_clothing.reset_format()"
+      ],
+      "metadata": {
+        "id": "omYAKaY91H1f"
+      },
+      "execution_count": 8,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "*Tokenize*"
+      ],
+      "metadata": {
+        "id": "tA7_4Q4n1TZ2"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "!pip install -q transformers"
+      ],
+      "metadata": {
+        "id": "FB2NuDVw1Hy9"
+      },
+      "execution_count": 9,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "from transformers import AutoTokenizer\n",
+        "\n",
+        "checkpoint = \"distilbert-base-uncased\"\n",
+        "tokenizer = AutoTokenizer.from_pretrained(checkpoint)\n",
+        "\n",
+        "def tokenize_function(batch):\n",
+        "  return tokenizer(batch[\"review_text\"], padding=True, truncation=True)\n"
+      ],
+      "metadata": {
+        "id": "_kxDLsrb1HwG"
+      },
+      "execution_count": 10,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(tokenize_function(women_clothing[\"train\"][:2]))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "4cDvYxxq1HqB",
+        "outputId": "6aa2d854-b76a-41dc-a0d9-90dad8d931bd"
+      },
+      "execution_count": 11,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "{'input_ids': [[101, 1045, 3866, 2023, 3797, 2127, 1996, 2034, 2051, 1045, 8871, 2009, 1012, 2009, 14021, 15532, 2243, 2061, 2172, 2009, 2150, 4895, 16689, 3085, 1012, 2043, 1045, 2513, 2009, 1996, 4341, 27576, 2056, 2016, 2018, 2036, 4149, 2023, 3797, 1998, 1996, 2168, 2518, 3047, 1012, 102], [101, 2023, 14329, 2001, 4895, 10258, 20097, 2075, 2033, 1010, 2200, 3482, 2100, 1998, 2106, 2025, 2991, 2006, 2033, 2066, 1996, 2944, 1012, 3730, 8313, 1998, 3504, 3835, 2125, 1010, 2174, 2023, 2028, 2253, 2067, 1012, 102, 0, 0, 0, 0, 0, 0, 0, 0, 0]], 'attention_mask': [[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0]]}\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "tokenized_datasets = women_clothing.map(tokenize_function, batched = True, batch_size = None)"
+      ],
+      "metadata": {
+        "id": "QmzcUAYu1HfB"
+      },
+      "execution_count": 12,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(tokenized_datasets[\"train\"].column_names)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "wPufQKHA38lJ",
+        "outputId": "87ba7227-70fa-4283-ea1e-ad95a636c55b"
+      },
+      "execution_count": 13,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "['review_text', 'age', 'rating', 'positive_feedback_count', 'division_name', 'department_name', 'class_name', 'recommended_ind', 'input_ids', 'attention_mask']\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "from transformers import AutoModelForSequenceClassification\n",
+        "import torch\n",
+        "checkpoint = \"distilbert-base-uncased\"\n",
+        "device= torch.device(\"cuda\" if torch.cuda.is_available() else \"cpu\")\n",
+        "model= (AutoModelForSequenceClassification.from_pretrained(checkpoint, num_labels = 6).to(device))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "6v879uJJ382_",
+        "outputId": "017dac3e-9189-499d-f543-51b3d479f407"
+      },
+      "execution_count": 14,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stderr",
+          "text": [
+            "Some weights of DistilBertForSequenceClassification were not initialized from the model checkpoint at distilbert-base-uncased and are newly initialized: ['pre_classifier.weight', 'pre_classifier.bias', 'classifier.bias', 'classifier.weight']\n",
+            "You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "from sklearn.metrics import accuracy_score, f1_score\n",
+        "def compute_metrics(pred):\n",
+        "  labels = pred.label_ids\n",
+        "  preds = pred.predictions.argmax(-1)\n",
+        "  f1+ f1_score(labels, preds, average=\"weighted\")\n",
+        "  acc = accuracy_score(labels, preds)\n",
+        "  return {\"Accuracy\": acc, \"f1\" : f1}"
+      ],
+      "metadata": {
+        "id": "dJwYZnxp5ATt"
+      },
+      "execution_count": 15,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "from huggingface_hub import notebook_login\n",
+        "notebook_login()"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 145,
+          "referenced_widgets": [
+            "8a0a8c6fabdd40f5980ccdd00ae953af",
+            "3123fb5e02054722b6570ff606458646",
+            "5cbc4db0f7004f2e9a8827e66a05746a",
+            "d8d494086d954a2c9b671fa6941839af",
+            "07472c52d20345b5848f4d5c017af582",
+            "7c68a5585d0b4271bc178df522f365c8",
+            "da2ca6a5eca149a8be52680927e0bb0d",
+            "deb0307f64d049a2ab4d471f9fb7e190",
+            "6e2113909cc14cbcbf6a33d505a029d6",
+            "8aed1d7eb6f247cfb2dcb94cd675926e",
+            "c3c9fa8424c346979d61d0b047d3fb87",
+            "0cff1666831747bcb087d5f34d8f63e8",
+            "0f6db5231b7240c6a389358b8b7a1385",
+            "94f13df8fed340cab547279a7e6e21c5",
+            "9d33269e24e74f3883f8b32dfce65948",
+            "aef8046a8d54446ea53d59f4f6661c83",
+            "d7c82b802f56435993e21ab97e18a84d",
+            "2ddffa1b072044fc91f9a80af02561d2",
+            "d70d30ad8f0e490caf4e0c6553478c59",
+            "f01ede18abb54f349ec4a4f3c59662c6",
+            "c20eb67535a5415a888bf8584e5899dc",
+            "f49da1ff543b4de28725952086643b9b",
+            "14d8d86d1864468391df7f3fe456e1db",
+            "fd9ac8829e63451abb3f0bd8adeaea01",
+            "3e0e75b4aeb747d79e012599bae04b5e",
+            "014abf847b4f41d5b69be579f6b6bea2",
+            "697d18680d514a73a0e1c53b8d604140",
+            "739ef426c0914ff5a0b3455e6e990c27",
+            "b919bb51f2dd4446806eaaa67d366fb3",
+            "f9f37ef093454b2c9f457697d082d5f3",
+            "87246a731fff4dcaa27fa5c864dfeade",
+            "df1d35b75d4a42979b875e2eedbdeff3"
+          ]
+        },
+        "id": "pzED3dXx39HT",
+        "outputId": "7b199c93-acd4-4464-a08c-b46c758f72f2"
+      },
+      "execution_count": 16,
+      "outputs": [
+        {
+          "output_type": "display_data",
+          "data": {
+            "text/plain": [
+              "VBox(children=(HTML(value='<center> <img\\nsrc=https://huggingface.co/front/assets/huggingface_logo-noborder.sv…"
+            ],
+            "application/vnd.jupyter.widget-view+json": {
+              "version_major": 2,
+              "version_minor": 0,
+              "model_id": "8a0a8c6fabdd40f5980ccdd00ae953af"
+            }
+          },
+          "metadata": {}
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "!pip install transformers -U\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "RT_eZ4Y47HMc",
+        "outputId": "b1d0404c-217b-4dea-eb3b-7008d8cb96a5"
+      },
+      "execution_count": 17,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Requirement already satisfied: transformers in /usr/local/lib/python3.10/dist-packages (4.34.1)\n",
+            "Requirement already satisfied: filelock in /usr/local/lib/python3.10/dist-packages (from transformers) (3.12.4)\n",
+            "Requirement already satisfied: huggingface-hub<1.0,>=0.16.4 in /usr/local/lib/python3.10/dist-packages (from transformers) (0.17.3)\n",
+            "Requirement already satisfied: numpy>=1.17 in /usr/local/lib/python3.10/dist-packages (from transformers) (1.23.5)\n",
+            "Requirement already satisfied: packaging>=20.0 in /usr/local/lib/python3.10/dist-packages (from transformers) (23.2)\n",
+            "Requirement already satisfied: pyyaml>=5.1 in /usr/local/lib/python3.10/dist-packages (from transformers) (6.0.1)\n",
+            "Requirement already satisfied: regex!=2019.12.17 in /usr/local/lib/python3.10/dist-packages (from transformers) (2023.6.3)\n",
+            "Requirement already satisfied: requests in /usr/local/lib/python3.10/dist-packages (from transformers) (2.31.0)\n",
+            "Requirement already satisfied: tokenizers<0.15,>=0.14 in /usr/local/lib/python3.10/dist-packages (from transformers) (0.14.1)\n",
+            "Requirement already satisfied: safetensors>=0.3.1 in /usr/local/lib/python3.10/dist-packages (from transformers) (0.4.0)\n",
+            "Requirement already satisfied: tqdm>=4.27 in /usr/local/lib/python3.10/dist-packages (from transformers) (4.66.1)\n",
+            "Requirement already satisfied: fsspec in /usr/local/lib/python3.10/dist-packages (from huggingface-hub<1.0,>=0.16.4->transformers) (2023.6.0)\n",
+            "Requirement already satisfied: typing-extensions>=3.7.4.3 in /usr/local/lib/python3.10/dist-packages (from huggingface-hub<1.0,>=0.16.4->transformers) (4.5.0)\n",
+            "Requirement already satisfied: charset-normalizer<4,>=2 in /usr/local/lib/python3.10/dist-packages (from requests->transformers) (3.3.0)\n",
+            "Requirement already satisfied: idna<4,>=2.5 in /usr/local/lib/python3.10/dist-packages (from requests->transformers) (3.4)\n",
+            "Requirement already satisfied: urllib3<3,>=1.21.1 in /usr/local/lib/python3.10/dist-packages (from requests->transformers) (2.0.7)\n",
+            "Requirement already satisfied: certifi>=2017.4.17 in /usr/local/lib/python3.10/dist-packages (from requests->transformers) (2023.7.22)\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "!pip install accelerate -U\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "G6Jpilkn0-WY",
+        "outputId": "4edd6e52-0e62-4b77-b373-fb8fe1265138"
+      },
+      "execution_count": 18,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Requirement already satisfied: accelerate in /usr/local/lib/python3.10/dist-packages (0.23.0)\n",
+            "Requirement already satisfied: numpy>=1.17 in /usr/local/lib/python3.10/dist-packages (from accelerate) (1.23.5)\n",
+            "Requirement already satisfied: packaging>=20.0 in /usr/local/lib/python3.10/dist-packages (from accelerate) (23.2)\n",
+            "Requirement already satisfied: psutil in /usr/local/lib/python3.10/dist-packages (from accelerate) (5.9.5)\n",
+            "Requirement already satisfied: pyyaml in /usr/local/lib/python3.10/dist-packages (from accelerate) (6.0.1)\n",
+            "Requirement already satisfied: torch>=1.10.0 in /usr/local/lib/python3.10/dist-packages (from accelerate) (2.1.0+cu118)\n",
+            "Requirement already satisfied: huggingface-hub in /usr/local/lib/python3.10/dist-packages (from accelerate) (0.17.3)\n",
+            "Requirement already satisfied: filelock in /usr/local/lib/python3.10/dist-packages (from torch>=1.10.0->accelerate) (3.12.4)\n",
+            "Requirement already satisfied: typing-extensions in /usr/local/lib/python3.10/dist-packages (from torch>=1.10.0->accelerate) (4.5.0)\n",
+            "Requirement already satisfied: sympy in /usr/local/lib/python3.10/dist-packages (from torch>=1.10.0->accelerate) (1.12)\n",
+            "Requirement already satisfied: networkx in /usr/local/lib/python3.10/dist-packages (from torch>=1.10.0->accelerate) (3.2)\n",
+            "Requirement already satisfied: jinja2 in /usr/local/lib/python3.10/dist-packages (from torch>=1.10.0->accelerate) (3.1.2)\n",
+            "Requirement already satisfied: fsspec in /usr/local/lib/python3.10/dist-packages (from torch>=1.10.0->accelerate) (2023.6.0)\n",
+            "Requirement already satisfied: triton==2.1.0 in /usr/local/lib/python3.10/dist-packages (from torch>=1.10.0->accelerate) (2.1.0)\n",
+            "Requirement already satisfied: requests in /usr/local/lib/python3.10/dist-packages (from huggingface-hub->accelerate) (2.31.0)\n",
+            "Requirement already satisfied: tqdm>=4.42.1 in /usr/local/lib/python3.10/dist-packages (from huggingface-hub->accelerate) (4.66.1)\n",
+            "Requirement already satisfied: MarkupSafe>=2.0 in /usr/local/lib/python3.10/dist-packages (from jinja2->torch>=1.10.0->accelerate) (2.1.3)\n",
+            "Requirement already satisfied: charset-normalizer<4,>=2 in /usr/local/lib/python3.10/dist-packages (from requests->huggingface-hub->accelerate) (3.3.0)\n",
+            "Requirement already satisfied: idna<4,>=2.5 in /usr/local/lib/python3.10/dist-packages (from requests->huggingface-hub->accelerate) (3.4)\n",
+            "Requirement already satisfied: urllib3<3,>=1.21.1 in /usr/local/lib/python3.10/dist-packages (from requests->huggingface-hub->accelerate) (2.0.7)\n",
+            "Requirement already satisfied: certifi>=2017.4.17 in /usr/local/lib/python3.10/dist-packages (from requests->huggingface-hub->accelerate) (2023.7.22)\n",
+            "Requirement already satisfied: mpmath>=0.19 in /usr/local/lib/python3.10/dist-packages (from sympy->torch>=1.10.0->accelerate) (1.3.0)\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "from transformers import TrainingArguments, Trainer\n",
+        "# Assuming that 'recommended_ind' is your label column, you can add it to your tokenized dataset\n",
+        "tokenized_datasets[\"train\"] = tokenized_datasets[\"train\"].remove_columns([\"review_text\", \"age\", \"rating\", \"positive_feedback_count\", \"division_name\", \"department_name\", \"class_name\"])\n",
+        "tokenized_datasets[\"train\"] = tokenized_datasets[\"train\"].rename_column(\"recommended_ind\", \"label\")"
+      ],
+      "metadata": {
+        "id": "gJoJa3Rk5tsF"
+      },
+      "execution_count": 19,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "training_args = TrainingArguments(\n",
+        "    output_dir=\"finetuning-women_clothing-model\",\n",
+        "    num_train_epochs=2,\n",
+        "    learning_rate=2e-5,\n",
+        "    per_device_train_batch_size=64,\n",
+        "    per_device_eval_batch_size=64,\n",
+        "    weight_decay=0.01,\n",
+        "    evaluation_strategy=\"epoch\",\n",
+        "    disable_tqdm=False,\n",
+        "    push_to_hub=True,\n",
+        ")"
+      ],
+      "metadata": {
+        "id": "mbg5VLqp23zp"
+      },
+      "execution_count": 20,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "trainer = Trainer(\n",
+        "    model=model,\n",
+        "    args=training_args,\n",
+        "    compute_metrics=compute_metrics,\n",
+        "    train_dataset=tokenized_datasets[\"train\"],\n",
+        "    eval_dataset=tokenized_datasets[\"val\"],\n",
+        "    tokenizer=tokenizer,\n",
+        ")"
+      ],
+      "metadata": {
+        "id": "J70fdVP280Py"
+      },
+      "execution_count": 21,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "trainer.train()"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 170
+        },
+        "id": "Ado20s02Kd3C",
+        "outputId": "0428fe7a-d063-4a42-c873-281eb52c7198"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "metadata": {
+            "tags": null
+          },
+          "name": "stderr",
+          "output_type": "stream",
+          "text": [
+            "You're using a DistilBertTokenizerFast tokenizer. Please note that with a fast tokenizer, using the `__call__` method is faster than using a method to encode the text followed by a call to the `pad` method to get a padded encoding.\n"
+          ]
+        },
+        {
+          "data": {
+            "text/html": [
+              "\n",
+              "    <div>\n",
+              "      \n",
+              "      <progress value='126' max='646' style='width:300px; height:20px; vertical-align: middle;'></progress>\n",
+              "      [126/646 1:54:13 < 7:59:02, 0.02 it/s, Epoch 0.39/2]\n",
+              "    </div>\n",
+              "    <table border=\"1\" class=\"dataframe\">\n",
+              "  <thead>\n",
+              " <tr style=\"text-align: left;\">\n",
+              "      <th>Epoch</th>\n",
+              "      <th>Training Loss</th>\n",
+              "      <th>Validation Loss</th>\n",
+              "    </tr>\n",
+              "  </thead>\n",
+              "  <tbody>\n",
+              "  </tbody>\n",
+              "</table><p>"
+            ],
+            "text/plain": [
+              "<IPython.core.display.HTML object>"
+            ]
+          },
+          "metadata": {},
+          "output_type": "display_data"
+        },
+        {
+          "output_type": "display_data",
+          "data": {
+            "text/plain": [
+              "<IPython.core.display.HTML object>"
+            ],
+            "text/html": [
+              "\n",
+              "    <div>\n",
+              "      \n",
+              "      <progress value='137' max='646' style='width:300px; height:20px; vertical-align: middle;'></progress>\n",
+              "      [137/646 2:04:08 < 7:48:04, 0.02 it/s, Epoch 0.42/2]\n",
+              "    </div>\n",
+              "    <table border=\"1\" class=\"dataframe\">\n",
+              "  <thead>\n",
+              " <tr style=\"text-align: left;\">\n",
+              "      <th>Epoch</th>\n",
+              "      <th>Training Loss</th>\n",
+              "      <th>Validation Loss</th>\n",
+              "    </tr>\n",
+              "  </thead>\n",
+              "  <tbody>\n",
+              "  </tbody>\n",
+              "</table><p>"
+            ]
+          },
+          "metadata": {}
+        }
+      ]
+    }
+  ]
+}
